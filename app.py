@@ -16,7 +16,7 @@ CORS(app)
 path_to_file = "lyrics2.txt"
 text = open(path_to_file, 'rb').read().decode(encoding='utf-8')
 text = text.replace('\r', '')
-print('Length of the text {} chars'.format(len(text)))
+#print('Length of the text {} chars'.format(len(text)))
 vocab = sorted(set(text))
 char2idx = {u: i for i, u in enumerate(vocab)}
 idx2char = np.array(vocab)
@@ -60,16 +60,3 @@ def output_lyrics():
     
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug = False, port = os.environ.get('PORT', 80))
-    #from werkzeug.serving import run_simple
-    #run_simple('localhost', 5000, app)
-
-
-"""
-print("this is the data gotten")
-    print(content)
-    print("---------------")
-    print(content["initial_string"])
-    print("---------------")
-    print("this is the end")
-print(initial_string)
-"""

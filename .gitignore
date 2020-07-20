@@ -1,3 +1,10 @@
 .cph
 .vscode
 env/
+.slugignore
+node_modules/
+venv/
+training_checkpoints/
+lyric_gen.h5
+lyrics.txt
+lyrics3.txt
