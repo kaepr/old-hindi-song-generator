@@ -8,11 +8,16 @@ To change the frontend, to the frontend directory
 npm install 
 npm start
 ```
+Then after editing
+```javascript
+npm run build
+```
+And replace the new build folder with the one in root directory
 
-For editing the API 
+For editing the API and running the server
 ```python
 pip install -r requirements.txt
-python server.py
+python app.py
 ```
 
 To Do List
