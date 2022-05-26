@@ -45,7 +45,7 @@ ipython==7.15.0
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
 jedi==0.17.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 json5==0.9.5
 jsonpatch==1.22
 jsonpointer==2.0
